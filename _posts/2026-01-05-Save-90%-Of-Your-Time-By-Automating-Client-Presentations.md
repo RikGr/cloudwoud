@@ -200,7 +200,7 @@ By treating presentations as code, we brought software engineering best practice
 
 If you're spending hours each week on repetitive presentation work, ask yourself: could this be automated? The answer is almost always yes. And the ROI is better than you think.
 
-**Want to know more details about how the actual code works that makes this happen? Feel free to contact me!**
+**Want to know more see some of the actual code that makes this happen? Feel free to contact me!**
 
 ## Further reading on Slidev
 
