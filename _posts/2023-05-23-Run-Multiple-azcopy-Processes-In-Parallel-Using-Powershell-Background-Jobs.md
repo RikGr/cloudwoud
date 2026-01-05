@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Run azcopy processes in parallel using Powershell Background Jobs
+title:  Run Azcopy Processes In Parallel Using Powershell Background Jobs
 author: Rik Groenewoud
 tags: microsoft azure azuread aad identitymanagement
 ---

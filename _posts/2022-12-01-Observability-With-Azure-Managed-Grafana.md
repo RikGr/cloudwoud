@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Observability with Azure Managed Grafana
+title: Observability With Azure Managed Grafana
 author: Rik Groenewoud
 tags: microsoft azure observability grafana
 ---
