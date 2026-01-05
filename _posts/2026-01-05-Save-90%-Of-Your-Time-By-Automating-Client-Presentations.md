@@ -106,7 +106,7 @@ Pipeline Parameters: Customer name, attendees, team updates, and opportunities
 ### Slidev Templates
 
 - Define slide structure and layouts using markdown
-- Include placeholders for dynamic content (e.g., {% raw %}`{{CUSTOMER_NAME}}`{% endraw %}, {% raw %}`{{WORK_ITEMS}}`{% endraw %})
+- Include placeholders for dynamic content (e.g., `{{CUSTOMER_NAME}}`, `{{WORK_ITEMS}}`)
 - Reference custom theme for branding
 - Use Slidev's built-in layouts (cover, two-column, image-left, etc.)
 
@@ -143,8 +143,8 @@ Pipeline Parameters: Customer name, attendees, team updates, and opportunities
 
 ### Time Savings
 
-- **Before**: 1 hour per presentation × 3 presentations per month × 7 clients = 21 hours/month
-- **After**: 5 minutes per presentation × same volume = ~2 hours/month
+Before: 1 hour per presentation × 3 presentations per month × 7 clients = 21 hours/month
+After: 5 minutes per presentation × same volume = ~2 hours/month
 
 That's 90%+ time savings (19 hours per month) that can be reinvested in actual client work.
 
