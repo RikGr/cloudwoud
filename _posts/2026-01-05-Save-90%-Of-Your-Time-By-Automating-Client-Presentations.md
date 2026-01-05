@@ -7,7 +7,7 @@ tags: microsoft powershell slidev automation
 
 ## Intro
 
-If you've ever worked in consulting or managed services, you know the drill. Every two weeks, there's another operational meeting. Every month, another steering committee meeting. And before each meeting, someone (usually you) spends hours:
+If you've ever worked in as a Service Manager or similar role, you know the drill. Every two weeks, there's another operational meeting. Every month, another steering committee meeting. And before each meeting, someone (usually you) spends hours:
 
 - Manually pulling data from Azure DevOps
 - Copying work item statuses into a slide deck
