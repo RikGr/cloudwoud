@@ -143,8 +143,8 @@ Pipeline Parameters: Customer name, attendees, team updates, and opportunities
 
 ### Time Savings
 
-Before: 1 hour per presentation × 3 presentations per month × 7 clients = 21 hours/month
-After: 5 minutes per presentation × same volume = ~2 hours/month
+- **Before**: 1 hour per presentation × 3 presentations per month × 7 clients = 21 hours/month
+- **After**: 5 minutes per presentation × same volume = ~2 hours/month
 
 That's 90%+ time savings (19 hours per month) that can be reinvested in actual client work.
 
