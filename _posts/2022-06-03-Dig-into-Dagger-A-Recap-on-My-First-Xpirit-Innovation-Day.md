@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dig Into Dagger. A Recap On My First Xpirit Innovation Day
+title: Dig into Dagger. A Recap on My First Xpirit Innovation Day
 author: Rik Groenewoud
 tags: microsoft azure dagger iac pulumi cicd docker
 ---

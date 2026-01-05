@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control An IoT Device Based On Microsoft Graph API Data. Azure Logic Apps And Azure Functions Make It Easy!
+title: Control an IoT Device Based on Microsoft Graph API Data. Azure Logic Apps and Azure Functions Make It Easy! 
 author: Rik Groenewoud
 tags: microsoft azure iot logicapps azurefunctions powershell
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save 90% Of Your Time By Automating Recurring Client Presentations
+title: Save 90% of Your Time by Automating Recurring Client Presentations
 author: Rik Groenewoud
 tags: microsoft powershell slidev automation
 ---

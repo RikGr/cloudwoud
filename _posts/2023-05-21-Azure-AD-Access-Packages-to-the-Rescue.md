@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure AD Access Packages To The Rescue!
+title:  Azure AD Access Packages to the Rescue!
 author: Rik Groenewoud
 tags: microsoft azure azuread aad identitymanagement
 ---
