@@ -5,14 +5,38 @@
 
 
 .wrapper {
-    max-width: 1200px;
-    width: 90%;
+    max-width: none !important;
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+section {
+    max-width: none !important;
+    width: calc(100% - 270px) !important;
+    float: right;
+}
+
+header {
+    width: 270px;
+    float: left;
 }
 
 @media print, screen and (max-width: 960px) {
     .wrapper {
         width: auto;
         margin: 0;
+    }
+    
+    section {
+        width: auto !important;
+        float: none;
+        border: none;
+        padding-right: 0;
+    }
+    
+    header {
+        width: auto;
+        float: none;
     }
 }
 

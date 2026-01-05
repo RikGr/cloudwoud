@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Azure AD Access Packages To The Rescue!
+title: Azure AD Access Packages To The Rescue!
 author: Rik Groenewoud
 tags: microsoft azure azuread aad identitymanagement
 ---
@@ -88,6 +88,7 @@ foreach ($user in $newUsers) {
 ```
 
 To remove users from the access packages, I came up with an addition to the script shown below. Out of the comparison, remove the users that are in the access package but no longer exist in the CSV file.
+
 ```powershell
 
 if ($null -ne $oldUsers) {
@@ -107,7 +108,6 @@ else {
 The pipeline, which excutes the script looks like this:
 
 ```yaml
-
 pool: "ubuntu-latest"
 
 parameters:
@@ -118,7 +118,7 @@ parameters:
       - users2.csv
       - etc
 
-    displayName: 'Pick the team CSV file you want to update'
+    displayName: "Pick the team CSV file you want to update"
 
 variables:
   - group: variableGroup
@@ -129,30 +129,27 @@ stages:
     jobs:
       - job: RunPSScript
         steps:
-         - ${{ each path in parameters.paths }}:
-            - task: AzurePowerShell@5
-              displayName: 'Validate CSV delimiter and headers for ${{ path }}'
-              inputs:
-                azureSubscription: 'SubscriptionName'
-                ScriptType: 'FilePath'
-                ScriptPath: '$(Build.Repository.LocalPath)/Scripts/validateCSV.ps1'
-                ScriptArguments:
-                  -path '${{ path }}'
-                azurePowerShellVersion: 'LatestVersion'
-                pwsh: true
+          - ${{ each path in parameters.paths }}:
+              - task: AzurePowerShell@5
+                displayName: "Validate CSV delimiter and headers for ${{ path }}"
+                inputs:
+                  azureSubscription: "SubscriptionName"
+                  ScriptType: "FilePath"
+                  ScriptPath: "$(Build.Repository.LocalPath)/Scripts/validateCSV.ps1"
+                  ScriptArguments: -path '${{ path }}'
+                  azurePowerShellVersion: "LatestVersion"
+                  pwsh: true
 
-            - task: AzurePowerShell@5
-              displayName: 'Run script for: ${{ path }}'
-              inputs:
-                azureSubscription: 'SubscriptionName'
-                ScriptType: 'FilePath'
-                ScriptPath: '$(Build.Repository.LocalPath)/Scripts/AddUsersToAccessPackage.ps1'
-                ScriptArguments:
-                  -path '${{ path }}' `
-                  -secret '$(userOnboardingSecret)'
-                azurePowerShellVersion: 'LatestVersion'
-                pwsh: true
-
+              - task: AzurePowerShell@5
+                displayName: "Run script for: ${{ path }}"
+                inputs:
+                  azureSubscription: "SubscriptionName"
+                  ScriptType: "FilePath"
+                  ScriptPath: "$(Build.Repository.LocalPath)/Scripts/AddUsersToAccessPackage.ps1"
+                  ScriptArguments: -path '${{ path }}' `
+                    -secret '$(userOnboardingSecret)'
+                  azurePowerShellVersion: "LatestVersion"
+                  pwsh: true
 ```
 
 In the parameters section you can see that we set the CSV files. Then for each file we run the tasks. We have one task that validates the CSV file and one task that runs the script. The script task has two parameters, the path to the CSV file and the secret. The secret is a variable that is stored in the Azure DevOps variable group. This variable group is linked to the pipeline. The secret is the client secret of the Azure AD app registration that we created earlier. This secret is used to authenticate to the Microsoft Graph API.
