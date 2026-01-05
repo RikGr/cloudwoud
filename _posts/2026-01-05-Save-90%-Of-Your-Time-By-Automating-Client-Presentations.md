@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use Powershell and Slidev to Automate Slide Creation
+title: Save 90% Of Your Time By Automating Recurring Client Presentations
 author: Rik Groenewoud
 tags: microsoft powershell slidev automation
 ---
