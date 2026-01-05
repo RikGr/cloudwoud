@@ -16,7 +16,7 @@ If you've ever worked in as a Service Manager or similar role, you know the dril
 - Proofreading for typos
 - Etc etc.
 
-Multiply this by 7 clients with both monthly and two-weekly meetings, and you're spending over 20 hours every month on repetitive presentation work. There has to be a better way.
+Multiply this by let's say 7 clients with both monthly and two-weekly meetings, and you're spending over 20 hours every month on repetitive presentation work. There has to be a better way.
 
 ## The Solution
 
